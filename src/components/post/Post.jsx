@@ -21,14 +21,12 @@ export default function Post({ image, descrip, path }) {
           zIndex: 100,
         }}
       >
-        <i class="fa-solid fa-bookmark"></i>
+        <div className="bookmarkIcon">
+          <i class="fa-solid fa-bookmark"></i>
+        </div>
       </div>
       <div className="postImg">
-        <img
-          src={image}
-          alt=""
-          className="post__img"
-        />
+        <img src={image} alt="" className="post__img" />
       </div>
       <div className="postInfo">
         <div className="postCats">
