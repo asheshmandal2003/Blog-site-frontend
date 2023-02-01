@@ -76,3 +76,10 @@ a {
   color: #999;
   font-family: "Source Sans Pro", sans-serif;
 }
+
+@media screen and (max-width: 960px) {
+  .sign-up-wrapper {
+    height: 95%;
+    width: 100%;
+  }
+}

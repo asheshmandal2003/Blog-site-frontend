@@ -28,6 +28,14 @@
   justify-content: center;
   align-items: center;
 }
+.menu-icon {
+  display: none;
+}
+.navbarIcons {
+  font-size: 1.5rem;
+  color: #222;
+  padding: 0.4rem;
+}
 .topImg img {
   height: 40px;
   width: 40px;
@@ -63,6 +71,61 @@ a {
   text-decoration: none;
   color: #000;
 }
-@media screen and (min-width: 1000px) {
-  
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .NavbarItems {
+    position: relative;
+  }
+
+  .topList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+    top: 80px;
+    left: -150%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .topList.active {
+    background: #fff;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .topListItem {
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    display: table;
+    transition: all 0.5s ease;
+  }
+
+  .topListItem:hover {
+    background-color: #e0e0e0;
+    border-radius: 0;
+  }
+
+  .navbarIcons {
+    font-size: 1.8rem;
+    color: #222;
+    padding: 0.4rem;
+  }
+  .topright {
+    flex-direction: row;
+  }
 }

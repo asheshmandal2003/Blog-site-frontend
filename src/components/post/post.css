@@ -63,3 +63,6 @@
     color: red;
     transition: 0.3s;
 }
+.bookmarkIcon{
+    cursor: pointer;
+}
