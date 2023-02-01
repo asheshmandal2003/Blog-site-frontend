@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Collegiate+One&family=Courgette&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;1,600;1,700&family=Lora:ital@1&family=Poppins&family=Source+Sans+Pro:wght@600&display=swap");
+.sign-up {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 98.6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  background-color: rgb(14, 130, 224);
+}
+.sign-up-wrapper {
+  height: 95vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+.inputs {
+  font-size: 15x;
+  margin: 10px;
+  color: #111;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+.input-box {
+  padding: 5px;
+  height: 25px;
+  width: 400px;
+  margin: 5px;
+  border-radius: 3px;
+  outline: none;
+  border: none;
+  border: 1px solid #555;
+  color: #000;
+  font-family: "Lora", serif;
+  font-weight: 400;
+}
+.sign-up-header {
+  color: #111;
+  font-size: 30px;
+}
+.sign-up-button {
+  width: 400px;
+  margin-top: 15px;
+  height: 32px;
+  background-color: rgb(14, 130, 224);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+}
+.sign-in-option {
+  font-size: 12px;
+  color: #777;
+  position: relative;
+  left: 140px;
+  margin-top: 15px;
+}
+a {
+  color: rgb(14, 130, 224);
+  text-decoration: none;
+}
+::placeholder {
+  color: #999;
+  font-family: "Source Sans Pro", sans-serif;
+}

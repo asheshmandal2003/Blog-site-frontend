@@ -1,4 +1,4 @@
-import "./slidebar.css";
+import "./slidebar.css"
 
 export default function Slidebar() {
   return (
