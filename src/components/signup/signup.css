@@ -80,6 +80,7 @@ a {
 @media screen and (max-width: 960px) {
   .sign-up-wrapper {
     height: 95%;
-    width: 100%;
+    width: fit-content;
+    padding: 1.5rem;
   }
 }

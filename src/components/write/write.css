@@ -1,51 +1,68 @@
-.write{
-    padding: 50px;
+.write-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.writeImg img{
-    width: 70%;
-    height: 300px;
-    object-fit: cover;
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 20px;
+.writeImg img {
+  width: 80vw;
+  height: 300px;
+  object-fit: cover;
+  margin-left: 150px;
+  margin-right: 150px;
+  border-radius: 20px;
 }
-.writeForm{
-    position: relative;
+.writeForm {
+  position: relative;
 }
-.writeFormGroup{
-    margin-left: 150px;
+.writeFormGroup {
+  margin-left: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.writeIcon {
+  font-size: 25px;
+  color: #666;
+  cursor: pointer;
+}
+.writeInput {
+  font-size: 28px;
+  border: none;
+  width: 70vw;
+  padding: 20px;
+  color: #222;
+}
+.writeInput:focus {
+  outline: none;
+}
+.writeText {
+  font-size: 17px;
+  margin-top: 0.8rem;
+  border: none;
+  width: 80vw;
+  color: #555;
+  outline: none;
+}
+.writeSubmit {
+  position: absolute;
+  top: 20px;
+  right: 8%;
+  color: white;
+  background-color: rgb(8, 145, 145);
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+@media screen and (max-width: 960px) {
+  .write {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-.writeIcon{
-    font-size: 25px;
-    color: #666;
-    cursor: pointer;
-}
-.writeInput{
-    font-size: 28px;
-    border: none;
-    width: 70vw;
-    padding: 20px;
-    color: #222;
-}
-.writeInput:focus{
-    outline: none;
-}
-.writeText{
-    font-size: 17px;
-    color: #555;
-}
-.writeSubmit{
-    position: absolute;
-    top: 20px;
-    right: 50px;
-    color: white;
-    background-color: rgb(8, 145, 145);
-    padding: 10px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 16px;
+    text-align: center;
+    overflow: hidden;
+  }
 }
