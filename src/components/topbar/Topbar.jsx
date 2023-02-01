@@ -77,11 +77,41 @@ function Topbar() {
               WRITE
             </NavLink>
           </li>
+          <div className="menuUser">
+            {user ? (
+              <li className="topListItem">
+                <NavLink to={"/settings"} onClick={closeMobileMenu}>
+                  <img
+                    src="./pic1.jpg"
+                    alt=""
+                    style={{
+                      height: "40px",
+                      width: "40px",
+                      borderRadius: "50%",
+                      objectFit: "cover",
+                    }}
+                  />
+                </NavLink>
+              </li>
+            ) : (
+              <>
+                <li className="topListItem">
+                  <NavLink to={"/login"} onClick={closeMobileMenu}>
+                    LOGIN
+                  </NavLink>
+                </li>
+                <li className="topListItem">
+                  <NavLink to={"/signup"} onClick={closeMobileMenu}>
+                    SIGNUP
+                  </NavLink>
+                </li>
+              </>
+            )}
+          </div>
         </ul>
       </div>
       <div className="topright">
         <div className="navbarIcons">
-          <div className="topSearchIcon"></div>
           <ion-icon name="search-outline"></ion-icon>
         </div>
 

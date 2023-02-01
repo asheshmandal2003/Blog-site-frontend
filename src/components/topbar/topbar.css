@@ -1,5 +1,4 @@
 .top {
-  width: 100%;
   height: 80px;
   background-color: #fff;
   color: #000;
@@ -71,7 +70,13 @@ a {
   text-decoration: none;
   color: #000;
 }
+.menuUser{
+  display: none;
+}
 @media screen and (max-width: 960px) {
+  .menuUser{
+    display: block;
+  }
   .menu-icon {
     display: block;
     position: absolute;
@@ -97,6 +102,7 @@ a {
     left: -150%;
     opacity: 1;
     transition: all 0.5s ease;
+    overflow: scroll;
   }
 
   .topList.active {
@@ -109,7 +115,7 @@ a {
 
   .topListItem {
     text-align: center;
-    padding: 2rem;
+    padding: 1.4rem;
     width: 100%;
     display: table;
     transition: all 0.5s ease;
@@ -127,5 +133,8 @@ a {
   }
   .topright {
     flex-direction: row;
+  }
+  .topright{
+    display: none;
   }
 }
